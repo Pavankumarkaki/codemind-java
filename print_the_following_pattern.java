@@ -1,15 +1,15 @@
-import java.util.*;
-class Pattern
+import java.util.Scanner;
+class Alpha_pattern
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        for(int i=1;i<=n;i++)
+        for(int i=0;i<n;i++)
         {
-            for(int j=n;j>0;j--)
+            for(int j=0;j<n;j++)
             {
-                System.out.print(j+" ");
+                System.out.print((char)(65+i)+" ");
             }
             System.out.println();
         }
