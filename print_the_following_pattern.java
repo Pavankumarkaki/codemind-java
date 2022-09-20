@@ -7,13 +7,12 @@ class Pattern
         int n=sc.nextInt();
         for(int i=1;i<=n;i++)
         {
-            for(int j=1;j<=n;j++)
-            {
-                if(j==i || j==n+1-i){
-                    System.out.print("x");
+            for(int j=1;j<=n;j++){
+                if(j==i){
+                    System.out.print('0');
                 }
                 else{
-                    System.out.print("0");
+                    System.out.print('x');
                 }
             }
             System.out.println();
