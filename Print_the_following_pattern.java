@@ -1,15 +1,21 @@
 import java.util.Scanner;
-class num_pattern
+class Num_space
 {
     public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner (System.in);
         int n=sc.nextInt();
-        for(int i=1;i<=n;i++)
+        for(int i=n;i>0;i--)
         {
-            for(int j=i;j<=n;j++)
+            for(int j=1;j<=n;j++)
             {
-                System.out.print(j+" ");
+                if(j==i ||j==(n+1)-i)
+                {
+                    System.out.print(i+" ");
+                }
+                else{
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
