@@ -4,10 +4,10 @@ class Primes_in_range
     public static boolean isprime(int n)
     {
         if(n==1)
-            return true;
+            return false;
         else
         {
-            for(int i=2;i<=(int)Math.sqrt(n)+1;i++)
+            for(int i=2;i<=(int)Math.sqrt(n);i++)
             {
                 if(n%i==0)
                     return false;
