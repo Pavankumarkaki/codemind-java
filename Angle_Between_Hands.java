@@ -17,3 +17,20 @@ class angle_btw_hands
         System.out.println(Math.min(ang,angl));
     }
 }
+/*
+import java.util.Scanner;
+class Angle_between
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String[] time=s.split(":");
+        int h=Integer.valueOf(time[0]);
+        int m=Integer.valueOf(time[1]);
+        double a=Math.abs(30*h-(5.5*m));
+        double b=360-a;
+        System.out.print(Math.min(a,b));
+    }
+}
+*/
